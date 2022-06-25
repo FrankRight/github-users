@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { titleCase } from "../assets/util";
+import { titleCase } from "../../assets/util";
 
 import styles from "./Users.module.css";
 

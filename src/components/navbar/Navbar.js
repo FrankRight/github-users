@@ -4,7 +4,7 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 import { Divider, IconButton } from "@mui/material";
 
 import styles from "./Navbar.module.css";
-import SearchBar from "./SearchBar";
+import SearchBar from "../searchbar/SearchBar";
 
 function Navbar(props) {
   const [hidden, setHidden] = useState(false);
