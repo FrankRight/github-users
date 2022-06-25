@@ -1,0 +1,35 @@
+.hide {
+  display: none;
+}
+
+.form {
+  width: 50%;
+  margin: 30px 25%;
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #040404;
+  letter-spacing: inherit;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.searchButtonContainer {
+  background: #040404;
+  border-radius: 0 10px 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+}
+
+.searchButton {
+  color: white !important;
+}

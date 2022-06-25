@@ -1,7 +1,12 @@
+import Navbar from "./components/Navbar";
+import Users from "./components/Users";
+import "./App.css";
+
 function App() {
   return (
-    <div>
-      <h1>All Github users</h1>
+    <div className="container">
+      <Navbar />
+      <Users />
     </div>
   );
 }
