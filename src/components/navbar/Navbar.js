@@ -5,6 +5,7 @@ import { Divider, IconButton } from "@mui/material";
 
 import styles from "./Navbar.module.css";
 import SearchBar from "../searchbar/SearchBar";
+import logo from "../../assets/images/logo.png";
 
 function Navbar(props) {
   const [hidden, setHidden] = useState(false);
@@ -17,8 +18,11 @@ function Navbar(props) {
     <>
       <nav className={styles.nav}>
         <div className={styles.logo}>
-          <p className={styles.title}>Github You</p>
-          <p className={styles.motto}>Social as you!</p>
+          <img className={styles.logoImage} src={logo} alt="logo" width={50} />
+          <div className={styles.logoInfo}>
+            <span className={styles.title}>Github You</span>
+            <span className={styles.motto}>Social as you!</span>
+          </div>
         </div>
 
         <div>

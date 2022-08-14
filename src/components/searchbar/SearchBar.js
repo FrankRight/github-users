@@ -5,6 +5,10 @@ import styles from "./SearchBar.module.css";
 import { IconButton } from "@mui/material";
 
 function SearchBar(props) {
+  const submitSearchHandler = () => {
+    console.log("Searching!");
+  };
+
   return (
     <div className={props.hidden ? styles.hide : ""}>
       <form className={styles.form}>
@@ -14,7 +18,10 @@ function SearchBar(props) {
           placeholder="Enter Username"
         />
         <div className={styles.searchButtonContainer}>
-          <IconButton className={styles.searchButton}>
+          <IconButton
+            className={styles.searchButton}
+            onClick={submitSearchHandler}
+          >
             <SearchIcon fontSize="large" />
           </IconButton>
         </div>
